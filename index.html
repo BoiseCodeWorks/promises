@@ -1,0 +1,20 @@
+<html ng-app="promises" ng-cloak="true">
+<head>
+    <meta charset="UTF-8">
+    <title>Promises</title>
+</head>
+<body ng-controller="MainController as mc">
+    
+    
+    <div ng-show="mc.requestPending">LOADING....</div>
+       
+    <div ng-repeat="person in mc.data">
+        <h1>{{person.name}}</h1>
+    </div>
+    
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
